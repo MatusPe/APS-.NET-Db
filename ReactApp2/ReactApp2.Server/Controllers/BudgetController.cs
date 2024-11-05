@@ -16,9 +16,10 @@ public class BudgetController: ControllerBase
         _context = context;
         this.BudgetRepositary = BudgetRepositary;
         
+        
     }
     [HttpGet]
-    public async Task<IActionResult> GetALLBudget()
+    public async Task<IActionResult> GetALLlBudget()
     {
         var budget= await BudgetRepositary.GetAllBudgetAsync();
         return Ok(budget);
